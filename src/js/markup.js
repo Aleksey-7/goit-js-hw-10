@@ -8,9 +8,9 @@ export function countryСardMarkup({
   return `
     <div class="country-info__wrapper">
       <img class="country-info__image" src="${flags.svg}" alt="${
-    name.common
+    name.official
   }" width="30" />
-      <h2 class="country-info__name">${name.common}</h2>
+      <h2 class="country-info__name">${name.official}</h2>
     </div>
     <p class="country-info__capital"><b>Capital:</b> ${capital}</p>
     <p class="country-info__population"><b>Population:</b> ${population}</p>
@@ -23,8 +23,8 @@ export function countryСardMarkup({
 export function countryListMarkup({ flags, name }) {
   return `
     <li class="country-list__item">
-      <img class="country-list__image" src="${flags.svg}" alt="${name.common}" width="30" />
-      <h2 class="country-list__name">${name.common}</h2>
+      <img class="country-list__image" src="${flags.svg}" alt="${name.official}" width="30" />
+      <h2 class="country-list__name">${name.official}</h2>
     </li>
   `;
 }
